@@ -1,0 +1,5 @@
+generated: '2026-10-21'
+method: none
+source: https://registry.npmjs.org/-/v1/search?text=cleanaway&size=5
+note: Checked 2026-10-21. npm search for "cleanaway" returned total 0; pypi.org/pypi/cleanaway/json returned 404; GitHub repository search for "cleanaway" returned only third-party analysis repos (e.g. quantumudit/Analyzing-Cleanaway-Services), none first-party. Cleanaway publishes no developer portal or SDK.
+packages: []

@@ -1,23 +1,95 @@
 aid: cleanaway
+
 name: Cleanaway
-description: 'Cleanaway is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: Cleanaway (Cleanaway Waste Management Limited, ASX-listed) is Australia's leading waste management and resource
+  recovery company. It provides sustainable waste management, recycling, liquid and hazardous waste, and industrial services
+  to businesses, councils and communities across Australia, helping them turn waste into valuable resources. Surfaced via
+  the API Evangelist harvest backlog (australia-apidays-2026); no public developer API was found on its website.
+
 url: https://raw.githubusercontent.com/api-evangelist/cleanaway/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-21 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
 - Company
-apis: []
+- Waste Management
+- Recycling
+- Resource Recovery
+- Industrial Services
+- Sustainability
+- Australia
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: https://www.cleanaway.com.au/assets/cleanaway-theme/favicon.svg
+
 common:
+- type: Hosts
+  url: hosts/cleanaway-hosts.yml
+- type: IntegrationEdges
+  url: integrations/cleanaway-integration-edges.yml
+- type: Vendors
+  url: vendors/cleanaway-vendors.yml
+- type: DomainSecurity
+  url: security/cleanaway-domain-security.yml
 - type: Website
-  url: https://cleanaway.com.au/
+  url: https://www.cleanaway.com.au/
+- type: Newsroom
+  url: https://www.cleanaway.com.au/newsroom
+- type: PrivacyPolicy
+  url: https://www.cleanaway.com.au/privacy-statement
+- type: Support
+  url: https://www.cleanaway.com.au/contact-us
+- type: Investors
+  url: https://www.cleanaway.com.au/investors
+- type: Careers
+  url: https://www.cleanaway.com.au/careers-at-cleanaway
+- type: LinkedIn
+  url: https://www.linkedin.com/company/cleanawayau/
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: Identity from www.cleanaway.com.au homepage meta (og:title/description) and footer links; no developer portal, API
+    docs or terms-of-service link found on the site or sitemap.
+  evidence:
+  - url: https://www.cleanaway.com.au/
+    status: 200
+  - url: https://www.cleanaway.com.au/sitemap.xml
+    status: 200
+  - url: https://www.cleanaway.com.au/newsroom
+    status: 200
+  - url: https://www.cleanaway.com.au/privacy-statement
+    status: 200
+  - url: https://www.cleanaway.com.au/contact-us
+    status: 200
+  - url: https://www.cleanaway.com.au/investors
+    status: 200
+  - url: https://www.cleanaway.com.au/careers-at-cleanaway
+    status: 200
+  - url: https://www.linkedin.com/company/cleanawayau/
+    status: 200
+x-enrichment:
+  date: '2026-10-21'
+  status: enriched
+  artifacts_added: 9
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

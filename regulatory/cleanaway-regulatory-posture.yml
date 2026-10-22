@@ -1,0 +1,83 @@
+generated: '2026-10-21'
+method: searched
+probe: true
+source: https://cleanaway.bynder.com/m/4c0a09a6445308f6/original/CW_Web_Asset_Privacy-Policy-Final-7-June-2024-pdf.pdf
+discovered_via: >-
+  https://www.cleanaway.com.au/privacy-statement (HTTP 200) links "Read our privacy policy here." to the
+  Privacy Policy PDF (dated 7 June 2024) hosted on Cleanaway's Bynder asset library (HTTP 200, application/pdf).
+  The dossier carried no legal_pages; these are the only legal pages read.
+signals:
+  data_subject_request:
+    url: https://cleanaway.bynder.com/m/4c0a09a6445308f6/original/CW_Web_Asset_Privacy-Policy-Final-7-June-2024-pdf.pdf
+    section: '9. Accessing and correcting your personal information'
+    channel: Privacy Officer (contact details in section 12 of the policy)
+    stated_sla: 'acknowledge within 14 days; access usually within 14 days, or 30 days if more complicated'
+    rights_named: [access, correction, complaint]
+    escalation: Office of the Australian Information Commissioner (OAIC)
+    evidence:
+    - source: https://cleanaway.bynder.com/m/4c0a09a6445308f6/original/CW_Web_Asset_Privacy-Policy-Final-7-June-2024-pdf.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        "CWY will acknowledge your request within 14 days, and access will usually be granted within 14 days,
+        or if it is more complicated, 30 days. CWY will inform you if this timeframe is not achievable;"
+    - source: https://cleanaway.bynder.com/m/4c0a09a6445308f6/original/CW_Web_Asset_Privacy-Policy-Final-7-June-2024-pdf.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        "All requests to access or correct your personal information should be addressed to the Privacy
+        Officer, whose contact details can be found in section 12 of this policy;"
+    note: >-
+      An Australian Privacy Act access/correction procedure with a named channel and a stated response time.
+      Only access and correction are named as rights; the policy does not speak of deletion or portability.
+  subprocessors:
+    url: https://cleanaway.bynder.com/m/4c0a09a6445308f6/original/CW_Web_Asset_Privacy-Policy-Final-7-June-2024-pdf.pdf
+    section: '(f) third party suppliers'
+    evidence:
+    - source: https://cleanaway.bynder.com/m/4c0a09a6445308f6/original/CW_Web_Asset_Privacy-Policy-Final-7-June-2024-pdf.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        "As with most business organizations, CWY relies on third party suppliers who are contracted to provide
+        a range of services including insurance broking, vehicle and petrol supply, telecommunications,
+        equipment supply, engineering, security, data storage and processing, data analysis, information
+        broking, credit reporting, online computing, printing, contact centre, legal, accounting, business
+        consulting, auditing, archival, delivery, mailing, surveillance, investigation, payroll,
+        superannuation, training, employee share scheme, staff benefits, travel and hospitality services."
+    note: >-
+      Discloses CATEGORIES of suppliers that may receive personal information; no named subprocessor list
+      is published. Meta (Facebook) is named separately as an advertising vendor.
+  data_residency:
+    url: https://cleanaway.bynder.com/m/4c0a09a6445308f6/original/CW_Web_Asset_Privacy-Policy-Final-7-June-2024-pdf.pdf
+    section: '(k) overseas disclosure; 8. Personal information security and storage'
+    countries_named: [India, Vietnam, Cambodia, USA]
+    evidence:
+    - source: https://cleanaway.bynder.com/m/4c0a09a6445308f6/original/CW_Web_Asset_Privacy-Policy-Final-7-June-2024-pdf.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        "Some of the third parties to whom CWY may disclose personal information (including our suppliers and
+        related companies) may be located in overseas countries (such as India, Vietnam, Cambodia and the USA)."
+    - source: https://cleanaway.bynder.com/m/4c0a09a6445308f6/original/CW_Web_Asset_Privacy-Policy-Final-7-June-2024-pdf.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        "As with most businesses, some of our electronic records are held in cloud storage provided by our
+        third party IT service providers. Some cloud services may store data on servers located outside of
+        Australia."
+    note: >-
+      No Australian-only residency commitment: the policy states data may be disclosed to recipients in named
+      overseas countries and stored on servers outside Australia (cross-border disclosure under the Privacy Act).
+  data_retention:
+    url: https://cleanaway.bynder.com/m/4c0a09a6445308f6/original/CW_Web_Asset_Privacy-Policy-Final-7-June-2024-pdf.pdf
+    section: '8. Personal information security and storage'
+    evidence:
+    - source: https://cleanaway.bynder.com/m/4c0a09a6445308f6/original/CW_Web_Asset_Privacy-Policy-Final-7-June-2024-pdf.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        "CWY will take reasonable steps to destroy or de-identify records containing personal information when
+        that information is no longer required for CWY's functions and activities and is no longer required to
+        be kept by law."
+    note: >-
+      A purpose-bound destroy-or-de-identify retention rule (APP 11.2 language); no retention periods are stated.

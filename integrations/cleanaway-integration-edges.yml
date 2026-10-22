@@ -1,0 +1,33 @@
+generated: '2026-10-21'
+method: searched
+source:
+- https://www.avecglobal.com/case-studies/integration-of-cleanaway-with-technologyone
+- https://zapier.com/apps/cleanaway/integrations
+- https://n8n.io/integrations/cleanaway/
+- https://composio.dev/toolkits/cleanaway
+- https://monid.ai/tools/cleanaway
+checked:
+- https://zapier.com/apps/cleanaway/integrations
+- https://www.make.com/en/integrations/cleanaway
+- https://n8n.io/integrations/cleanaway/
+- https://www.cleanaway.com.au/
+- https://www.avecglobal.com/case-studies/integration-of-cleanaway-with-technologyone
+- https://composio.dev/toolkits/cleanaway
+- https://monid.ai/tools/cleanaway
+summary: null
+marketplace_apps: []
+edges:
+- partner_name: TechnologyOne
+  partner: null
+  type: docs
+  evidence: https://www.avecglobal.com/case-studies/integration-of-cleanaway-with-technologyone
+  marketplace: null
+  direction: third-party
+  category: council request management
+  operations: []
+  quote: Utilising the Cleanaway API, Avec configured outbound requests to be sent directly to Cleanaway, automating
+    the process and reducing manual intervention.
+templates: []
+note: Cleanaway publishes no integrations/partners page or developer portal. The one edge below comes from a third-party
+  integrator's (Avec) case study, not from Cleanaway itself; it states a "Cleanaway API" exists (not publicly documented)
+  and was used to connect TechnologyOne Request Management for Fraser Coast Regional Council.
